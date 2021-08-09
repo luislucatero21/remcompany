@@ -1,4 +1,4 @@
-body {
+.fadeAnimation {
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -13,6 +13,6 @@ body {
     }
 }
 
-.rem-white {
-    color: #e8e9eb;
+.image-grid {
+    width:100%; 
 }
