@@ -5,8 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>REM COMPANY</title>
-
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -23,9 +21,14 @@
         }
     </style>
 
-    <!-- Custom styles -->
-    <link rel="stylesheet" href="carousel.css">
-    <link rel="stylesheet" href="main.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css">
+    <!-- Font Awesome Solid + Brands -->
+    <script defer src="fontawesome/js/brands.js"></script>
+    <script defer src="fontawesome/js/solid.js"></script>
+    <script defer src="fontawesome/js/fontawesome.js"></script>
+    <script defer src="assets/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -49,14 +52,94 @@
                     </ul>
                 </div>
             </div>
+
+
         </nav>
     </header>
 
-    <main class="fadeAnimation vertical-fix">
-        <h1>Próximamente</h1>
+    <main class="fadeAnimation" style="min-height: 90vh;">
+        <div class="vertical-fix"></div>
+        <div class="container">
+            <div class="spacer"></div>
+            <h1 class="text-center">Contáctanos</h1>
+            <div class="spacer"></div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="nameInput">Nombre</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
+                        <input id="nameInput" type="text" class="form-control" placeholder="Juan Pérez" aria-label="nombre">
+                    </div>
+                    <label for="emailInput">Correo</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-envelope"></i></span>
+                        <input id="emailInput" type="text" class="form-control" placeholder="correo@gmail.com" aria-label="correo">
+                    </div>
+                    <label for="messageInput">Mensaje</label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-pen"></i></span>
+                        <textarea id="messageInput" rows="5" class="form-control" aria-label="mensaje"
+                        placeholder="Hola, me interesa conocer más información sobre los terrenos de REM Company"></textarea>
+                    </div>
+                    <div class="submit-button">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="footer-content">
+                        <div class="widget-content">
+                            <div class="spacer"></div>
+                            <p>Déjenos sus datos y nos pondremos en contacto con usted o puede contactarnos por los
+                                siguientes medios:</p>
+                            <br />
+                            <p class="contacts"><a class="social" href="tel:+52 55 4815 0509"><i
+                                        class="fas fa-phone"></i> +52 55 4815 0509</a></p>
+                            <p class="contacts"><a class="social"
+                                    href="https://wa.me/525548150509?text=Hola, me interesa conocer más información sobre los terrenos de REM Company"
+                                    target="_blank"><i class="fab fa-whatsapp"></i> +52 55 4815 0509</a></p>
+                            <p class="contacts"><a class="social" href="mailto:playainversionbienesraices@gmail.com"
+                                    target="_blank"><i class="fas fa-envelope"></i>
+                                    playainversionbienesraices@gmail.com</a></p>
+                        </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
+    <!-- FOOTER -->
+    <footer id="footer" style="bottom: 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    © 2021 REM Company.
+                </div>
+                <div class="col-sm-4">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com/REM-company-105865514871207" target="_blank"><i
+                                    class="fab fa-facebook fa-lg"></i></a></li>
+                        <li><a href="https://www.instagram.com/rem.company/" target="_blank"><i
+                                    class="fab fa-instagram fa-lg"></i></a></li>
+                        <li><a href="https://wa.me/525548150509?text=Hola, me interesa conocer más información sobre los terrenos de REM Company"
+                                target="_blank"><i class="fab fa-whatsapp fa-lg"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /END FOOTER -->
+
+    <!-- Scripts -->
+    <script src="js/jquery-3.6.0.js"></script>
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- /Scripts -->
 </body>
 
 </html>
