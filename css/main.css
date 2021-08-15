@@ -21,6 +21,10 @@ body {
   background-color: #e8e9eb;
 }
 
+main {
+    min-height: 90vh;
+}
+
 .image-grid {
   width: 100%;
   height: 500px;
