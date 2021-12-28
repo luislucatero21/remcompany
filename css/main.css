@@ -112,6 +112,11 @@ div.vertical-fix {
   width: 90%;
 }
 
+.lead {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 /***********************
 ********* Footer ******
 ************************/
