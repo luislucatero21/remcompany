@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>REM COMPANY</title>
 
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -24,6 +23,7 @@
     </style>
 
     <!-- Styles -->
+    <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <!-- Font Awesome Solid + Brands -->
@@ -59,238 +59,67 @@
         </nav>
     </header>
 
-    <main class="fadeAnimation">
+    <main>
         <div class="vertical-fix"></div>
         <div class="container">
             <div style="height: 20px;"></div>
 
-            <!--Seccion 0-->
-
-            <iframe width="956" height="538" src="https://www.youtube.com/embed/MuSdwJLHrXU"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen style="display: block; margin: 0 auto; max-width: 100%;"></iframe>
-
-            <div class="spacer"></div>
-
-            <!--Seccion 1-->
-
-            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img width="100%" height="400px" src="media/galeria/2.JPG" aria-hidden="true"
-                            focusable="false" style="object-fit: cover;">
-                    </div>
-                    <div class="carousel-item">
-                        <img width="100%" height="400px" src="media/galeria/1.JPG" aria-hidden="true"
-                            focusable="false" style="object-fit: cover;">
-                    </div>
-                    <div class="carousel-item">
-                        <img width="100%" height="400px" src="media/galeria/4.JPG" aria-hidden="true" focusable="false"
-                            style="object-fit: cover;">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+            <!-- Video -->
+            <div class="video-js" style="height: 60vh; width: 100%;">
+                <video style="height: 100%; max-width: 100%;" controls poster="media/galeria/videoposter.png"
+                    data-setup="{}">
+                    <source src="media/galeria/visitavirtual.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
 
             <div class="spacer"></div>
 
-            <iframe width="978" height="538" src="https://www.youtube.com/embed/otnxqWrqYvc" title="YouTube video player" 
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-            style="display: block; margin: 0 auto; max-width: 100%;"></iframe>
-
-            <div class="spacer"></div>
-
-            <!--Seccion 2-->
-
-            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+            <!-- Images -->
+            <div class="container galery-images">
+                <div class="row">
+                    <div class="col-md-6"><img src="media/galeria/04.jpg"></div>
+                    <div class="col-md-6"><img src="media/galeria/05.jpg"></div>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img width="100%" height="400px" src="media/galeria/8.JPG" aria-hidden="true"
-                            focusable="false" style="object-fit: cover;">
-                    </div>
-                    <div class="carousel-item">
-                        <img width="100%" height="400px" src="media/galeria/7.JPG" aria-hidden="true"
-                            focusable="false" style="object-fit: cover;">
-                    </div>
-                    <div class="carousel-item">
-                        <img width="100%" height="400px" src="media/galeria/11.JPG" aria-hidden="true" focusable="false"
-                            style="object-fit: cover;">
-                    </div>
+                <div style="height: 20px;"></div>
+                <div class="row">
+                    <div class="col-md-6"><img src="media/galeria/03.jpg"></div>
+                    <div class="col-md-6"><img src="media/galeria/07.jpg"></div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div style="height: 20px;"></div>
+                <div class="row">
+                    <div class="col-md-6"><img src="media/galeria/10.jpg"></div>
+                    <div class="col-md-6"><img src="media/galeria/09.jpg"></div>
+                </div>
+                <div style="height: 20px;"></div>
+                <div class="row">
+                    <div class="col-md-6"><img src="media/galeria/12.jpg"></div>
+                    <div class="col-md-6"><img src="media/galeria/11.jpg"></div>
+                </div>
+                <div style="height: 20px;"></div>
+                <div class="row">
+                    <div class="col-md-6"><img src="media/galeria/14.jpg"></div>
+                    <div class="col-md-6"><img src="media/galeria/16.jpg"></div>
+                </div>
+                <div style="height: 20px;"></div>
+                <div class="row">
+                    <div class="col-md-6"><img src="media/galeria/01.jpg"></div>
+                    <div class="col-md-6"><img src="media/galeria/20.jpg"></div>
+                </div>
+                <div style="height: 20px;"></div>
             </div>
 
             <div class="spacer"></div>
 
-            <iframe width="978" height="538" src="https://www.youtube.com/embed/XNnNAq5gkSk" title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-            style="display: block; margin: 0 auto; max-width: 100%;"></iframe>
-
-            <div class="spacer"></div>
-
-            <!--Seccion 3-->
-
-            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img width="100%" height="400px" src="media/galeria/12.jpg" aria-hidden="true"
-                            focusable="false" style="object-fit: cover;">
-                    </div>
-                    <div class="carousel-item">
-                        <img width="100%" height="400px" src="media/galeria/14.jpg" aria-hidden="true"
-                            focusable="false" style="object-fit: cover;">
-                    </div>
-                    <div class="carousel-item">
-                        <img width="100%" height="400px" src="media/galeria/18.jpg" aria-hidden="true" focusable="false"
-                            style="object-fit: cover;">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+            <!-- Panoramics -->
+            <div class="container galery-images min-toppad">
+                <div class="row"><div class="col"><img src="media/galeria/pan/2.jpg"></div></div>
+                <div class="row"><div class="col"><img src="media/galeria/pan/14.jpg"></div></div>
+                <div class="row"><div class="col"><img src="media/galeria/pan/18.jpg"></div></div>
+                <div class="row"><div class="col"><img src="media/galeria/pan/y1.jpg"></div></div>
+                <div class="row"><div class="col"><img src="media/galeria/pan/y2.jpg"></div></div>
+                <div class="row"><div class="col"><img src="media/galeria/pan/y3.jpg"></div></div>
             </div>
-
-            <div class="spacer"></div>
-
-            <iframe width="956" height="538" src="https://www.youtube.com/embed/6CO80BDIhJc" title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-            style="display: block; margin: 0 auto; max-width: 100%;"></iframe>
-
-            <div class="spacer"></div>
-
-            <!--Seccion 4-->
-
-            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img width="100%" height="400px" src="media/galeria/21.jpg" aria-hidden="true"
-                            focusable="false" style="object-fit: cover;">
-                    </div>
-                    <div class="carousel-item">
-                        <img width="100%" height="400px" src="media/galeria/19.jpg" aria-hidden="true"
-                            focusable="false" style="object-fit: cover;">
-                    </div>
-                    <div class="carousel-item">
-                        <img width="100%" height="400px" src="media/galeria/22.jpg" aria-hidden="true" focusable="false"
-                            style="object-fit: cover;">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-
-            <div class="spacer"></div>
-
-            <iframe width="950" height="538" src="https://www.youtube.com/embed/d_qV0bgUUFA" title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-            style="display: block; margin: 0 auto; max-width: 100%;"></iframe>
-
-            <div class="spacer"></div>
-
-            <!--Seccion 5-->
-
-            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img width="100%" height="400px" src="media/galeria/23.jpg" aria-hidden="true"
-                            focusable="false" style="object-fit: cover;">
-                    </div>
-                    <div class="carousel-item">
-                        <img width="100%" height="400px" src="media/galeria/25.jpg" aria-hidden="true"
-                            focusable="false" style="object-fit: cover;">
-                    </div>
-                    <div class="carousel-item">
-                        <img width="100%" height="400px" src="media/galeria/26.jpg" aria-hidden="true" focusable="false"
-                            style="object-fit: cover;">
-                    </div>
-                    <div class="carousel-item">
-                        <img width="100%" height="400px" src="media/galeria/muelle-cito.jpg" aria-hidden="true" focusable="false"
-                            style="object-fit: cover;">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-
-            <div class="spacer"></div>
-
-            <iframe width="956" height="538" src="https://www.youtube.com/embed/gFOCfQ0fnxk" title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-            style="display: block; margin: 0 auto; max-width: 100%;"></iframe>
 
             <div class="spacer"></div>
 
@@ -330,6 +159,7 @@
     <!-- Scripts -->
     <script src="js/jquery-3.6.0.js"></script>
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
     <!-- /Scripts -->
 </body>
 
